@@ -117,10 +117,3 @@ This project was developed as part of the MVC Programming course at **Lovely Pro
 ## 📄 License
 
 This project is for educational/demo purposes only. All rights reserved to Chirag Kaushik.
-
-```
-
----
-
-Let me know if you want a shorter version or need help adding it to your GitHub repo!
-```
