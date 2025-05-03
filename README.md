@@ -1,61 +1,126 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🌾 AgriMart - Online Agriculture Marketplace for Seeds and Tools
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+AgriMart is a Laravel-based web application designed to connect **farmers** and **suppliers** through a digital marketplace. It allows farmers to purchase agricultural products like seeds and tools, while suppliers can list their products for sale. The platform also includes an **admin panel** for user and product management, making it a complete solution for agricultural e-commerce.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🚀 Features
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 👨‍🌾 Farmer Module
+- Register/Login as Farmer
+- Browse available products
+- Add items to cart
+- Purchase products (demo only; no payment integration)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 🧑‍🌾 Supplier Module
+- Register/Login as Supplier
+- Add new products with images and details
+- View, update, or delete listed products
 
-## Learning Laravel
+### 🛠️ Admin Module
+- Dashboard with sales analysis and overview
+- Manage users (farmers and suppliers)
+- Manage all products (add, edit, delete)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## 🧰 Tech Stack
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **Frontend:** HTML5, CSS3, JavaScript, Blade (Laravel templating)
+- **Backend:** PHP 8.x, Laravel Framework
+- **Database:** MySQL (via phpMyAdmin)
+- **Server:** Localhost using XAMPP
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🛠️ Installation & Setup
 
-### Premium Partners
+### Prerequisites
+- PHP 8.x
+- Composer
+- XAMPP (Apache + MySQL)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development/)**
-- **[Active Logic](https://activelogic.com)**
+### Steps
 
-## Contributing
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/agrimart.git
+   cd agrimart
+````
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+2. **Install Dependencies:**
 
-## Code of Conduct
+   ```bash
+   composer install
+   ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+3. **Create a `.env` File:**
 
-## Security Vulnerabilities
+   ```bash
+   cp .env.example .env
+   ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+4. **Configure Database:**
 
-## License
+   * Open `.env` and set your MySQL DB credentials:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+     ```
+     DB_DATABASE=agrimart
+     DB_USERNAME=root
+     DB_PASSWORD=
+     ```
+
+5. **Run Migrations:**
+
+   ```bash
+   php artisan migrate
+   ```
+
+6. **Start the Server:**
+
+   ```bash
+   php artisan serve
+   ```
+
+   Visit: `http://127.0.0.1:8000`
+
+7. **Access phpMyAdmin:**
+
+   * Go to `http://localhost/phpmyadmin`
+   * Create a new database named `agrimart` before running migrations.
+
+---
+
+## 📸 Screenshots
+
+| Farmer View                       | Supplier Dashboard                    | Admin Panel                     |
+| --------------------------------- | ------------------------------------- | ------------------------------- |
+| ![Farmer](screenshots/farmer.png) | ![Supplier](screenshots/supplier.png) | ![Admin](screenshots/admin.png) |
+
+---
+
+## 📌 Future Improvements
+
+* Online payment gateway integration
+* Real-time order tracking
+* Mobile-responsive design
+* Notifications and messaging module
+
+---
+
+## 🙌 Acknowledgements
+
+This project was developed as part of the MVC Programming course at **Lovely Professional University**.
+
+---
+
+## 📄 License
+
+This project is for educational/demo purposes only. All rights reserved to Chirag Kaushik.
+
+```
+
+---
+
+Let me know if you want a shorter version or need help adding it to your GitHub repo!
+```
